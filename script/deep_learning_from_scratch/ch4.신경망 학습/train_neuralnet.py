@@ -1,7 +1,7 @@
 import numpy as np
 import sys
 import os
-sys.path.append(os.pardir)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from dataset.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 

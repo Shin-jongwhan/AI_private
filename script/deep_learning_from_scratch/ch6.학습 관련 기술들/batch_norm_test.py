@@ -3,7 +3,7 @@ import sys
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-sys.path.append(os.pardir)  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 부모 디렉터리의 파일을 가져올 수 있도록 설정
 from dataset.mnist import load_mnist
 from common.multi_layer_net_extend import MultiLayerNetExtend
 from common.optimizer import SGD, Adam

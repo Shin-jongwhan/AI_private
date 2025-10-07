@@ -2,7 +2,7 @@ import sys
 import os
 import numpy as np
 from collections import OrderedDict
-sys.path.append(os.pardir)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common.layers import *
 from common.gradient import numerical_gradient
 from dataset.mnist import load_mnist

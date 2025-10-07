@@ -23,7 +23,7 @@ SGD라고 부른다.
 import sys
 import os
 import numpy as np
-sys.path.append(os.pardir)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common.functions import sigmoid, softmax, cross_entropy_error
 from common.gradient import numerical_gradient
 
